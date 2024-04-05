@@ -14,6 +14,9 @@ La méthode getVelocity() utilise le patron de conception de "Iterateur". Il per
 Dans la classe Clock, on rajoute un attribut statique de type "Clock" qui représente l'instance de l'horloge "Clock". On ajoute une méthode statique getInstance(), qui permettra de récupérer la seule et unique instance possible de Clock. Ensuite, dans la classe "Wheel" on enleve l'attibrut "clock", on utilise à la place la méthode getInstance() de la classe Clock. Enfin à chaque fois qu'on utilise la Clock on la récupère via getInstance(). 
 
 ## Exercices 4
+Les deux classes Bike et Wheel n'appartiennent pas au même paquetage. Il y a ainsi une interdépendance (dépendance cyclique) entre les deux classes. Cela n'adhère pas aux bonnes pratiques de conception.
+
+La classe Wheel utilise la méthode getPush de la classe Bike. La classe Vehicule (package Transport) possède une abstraction de cette méthode.
 
 ## Exercices 5
 
