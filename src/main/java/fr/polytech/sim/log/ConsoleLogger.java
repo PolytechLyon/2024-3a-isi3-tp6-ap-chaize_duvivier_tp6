@@ -1,5 +1,8 @@
 package fr.polytech.sim.log;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * Console logger.
  */
@@ -15,9 +18,7 @@ public class ConsoleLogger extends NamedLogger {
     }
 
     @Override
-    public void log(String format, Object... args) {
-        String entry = String.format(format, args);
-        String message = String.format("%s\t%s\n", this.name, entry);
+    public void writeMessage(String message) {
         System.out.print(message);
     }
 }

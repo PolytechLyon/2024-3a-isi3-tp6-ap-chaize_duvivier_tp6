@@ -19,6 +19,7 @@ Les deux classes Bike et Wheel n'appartiennent pas au même paquetage. Il y a ai
 La classe Wheel utilise la méthode getPush de la classe Bike. La classe Vehicule (package Transport) possède une abstraction de cette méthode.
 
 ## Exercices 5
+Dans la classe de NamedLogger nous avons rajouté la méthode log() qui comporte les étapes communes des deux anciennes fonctions log(). Notre nouvelle méthode appelle une méthode "writeMessage()" qui se trouve dans les classes filles avec le traitement propre à chacune d'entre elle. 
 
 ## Exercices 6
 
