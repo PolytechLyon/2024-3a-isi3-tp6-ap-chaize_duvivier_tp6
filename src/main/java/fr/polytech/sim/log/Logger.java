@@ -12,4 +12,9 @@ public interface Logger {
      * @param args      message arguments
      */
     void log(String format, Object... args);
+
+    public static Logger useLogger(String name) {
+        Logger consoleLogger = new ConsoleLogger(name);
+        return new TimestampedLoggerDecorator(consoleLogger);
+    }
 }
