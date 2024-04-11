@@ -14,6 +14,7 @@ public interface Logger {
     void log(String format, Object... args);
 
     public static Logger useLogger(String name) {
-        return new ConsoleLogger(name);
+        Logger consoleLogger = new ConsoleLogger(name);
+        return new TimestampedLoggerDecorator(consoleLogger);
     }
 }

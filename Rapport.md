@@ -25,6 +25,7 @@ Dans la classe de NamedLogger nous avons rajouté la méthode log() qui comporte
 Avec le singleton, une seule instance est créée et partagée. Alors qu'avec ce pattern, plusieurs instances de logger existent sans avoir à "réflechir" à créer la bonne classe, il suffit d'appeler "useLogger".
 
 ## Exercices 7
+Nous avons créé la classe "TimestampedLoggerDecorator" qui possède un logger en temps que composant et qui réécrit une méthode log. Ainsi il suffit de créer un objet TimestampedLoggerDecorator et lui donner en attribut un logger souhaiter, la fonction log du décorateur ajoutera la date peu importe le logger utilisé.
 
 ## Exercices 8
 
