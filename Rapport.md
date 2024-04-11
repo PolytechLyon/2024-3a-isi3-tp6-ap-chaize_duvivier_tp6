@@ -32,3 +32,4 @@ La classe Context utilise le design pattern Façade.
 On peut avoir plusieurs ligne mais la fonction inject ne retourne que la premiere ligne.
 
 ## Exercices 9
+La fonction injectAll implémente le design pattern Iterateur.
