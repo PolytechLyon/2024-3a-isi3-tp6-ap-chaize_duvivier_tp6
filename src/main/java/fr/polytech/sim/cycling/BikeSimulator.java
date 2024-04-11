@@ -1,16 +1,13 @@
 package fr.polytech.sim.cycling;
 
 import fr.polytech.sim.Simulation;
-import fr.polytech.sim.log.ConsoleLoggerFactory;
-import fr.polytech.sim.log.FileLogger;
 import fr.polytech.sim.log.Logger;
-import fr.polytech.sim.log.LoggerFactory;
 
 /**
  * Bike simulation.
  */
 public class BikeSimulator implements Simulation {
-    private final Logger logger = new ConsoleLoggerFactory().createLogger("BikeSimulator");
+    private final Logger logger = Logger.useLogger("BikeSimulator");
 
     public void run() {
         Bike bike = new SimpleBike();

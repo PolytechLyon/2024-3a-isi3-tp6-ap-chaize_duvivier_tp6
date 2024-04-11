@@ -1,7 +1,5 @@
 package fr.polytech.sim.transport;
 
-import fr.polytech.sim.log.ConsoleLogger;
-import fr.polytech.sim.log.ConsoleLoggerFactory;
 import fr.polytech.sim.log.Logger;
 
 import java.util.*;
@@ -11,7 +9,7 @@ import java.util.*;
  */
 public abstract class Vehicle implements MobileObject {
 
-    private final Logger logger = new ConsoleLoggerFactory().createLogger("Vehicule");
+    private final Logger logger = Logger.useLogger("Vehicule");
     protected final List<MobileObject> components = new ArrayList<>();
 
     /**
