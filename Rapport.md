@@ -22,6 +22,7 @@ La classe Wheel utilise la méthode getPush de la classe Bike. La classe Vehicul
 Dans la classe de NamedLogger nous avons rajouté la méthode log() qui comporte les étapes communes des deux anciennes fonctions log(). Notre nouvelle méthode appelle une méthode "writeMessage()" qui se trouve dans les classes filles avec le traitement propre à chacune d'entre elle. 
 
 ## Exercices 6
+Avec le singleton, une seule instance est créée et partagée. Alors qu'avec ce pattern, plusieurs instances de logger existent sans avoir à "réflechir" à créer la bonne classe, il suffit d'appeler "useLogger".
 
 ## Exercices 7
 
