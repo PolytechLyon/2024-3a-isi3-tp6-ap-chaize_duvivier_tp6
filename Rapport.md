@@ -28,5 +28,7 @@ Avec le singleton, une seule instance est créée et partagée. Alors qu'avec ce
 Nous avons créé la classe "TimestampedLoggerDecorator" qui possède un logger en temps que composant et qui réécrit une méthode log. Ainsi il suffit de créer un objet TimestampedLoggerDecorator et lui donner en attribut un logger souhaiter, la fonction log du décorateur ajoutera la date peu importe le logger utilisé.
 
 ## Exercices 8
+La classe Context utilise le design pattern Façade.
+On peut avoir plusieurs ligne mais la fonction inject ne retourne que la premiere ligne.
 
 ## Exercices 9
